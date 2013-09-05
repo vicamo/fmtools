@@ -241,8 +241,9 @@ query_control(const struct tuner *tuner, uint32_t id,
                 }
         } else if (ioctl(tuner->fd, VIDIOC_QUERYCTRL, qc) != -1) {
                 /* Success. */
-        } else if (errno == ENOTTY) {
-                /* This tuner doesn't support 'id'. */
+        } else if (errno == ENOTTY || errno == EINVAL) {
+                /* This tuner doesn't support either query operation
+                 * or the specific control ('id') respectively */
                 memset(qc, 0, sizeof *qc);
         } else {
                 fatal(errno, "VIDIOC_QUERYCTRL");
