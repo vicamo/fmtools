@@ -1,3 +1,15 @@
+fmtools (2.0.6) unstable; urgency=low
+
+  * New upstream release.
+  
+  * rules: Replace by trivial three-line "dh" version.
+  
+  * control: Upgrade to policy 3.9.4.
+
+  * Upgrade to debhelper 9 (no changes necessary).
+
+ -- Ben Pfaff <pfaffben@debian.org>  Sat, 14 Sep 2013 14:41:58 -0700
+
 fmtools (2.0.5) unstable; urgency=low
 
   * Build fmtools properly from "make dist" generated tarball.  Closes:
