@@ -11,7 +11,9 @@ EXTRA_DIST = \
 	debian/control \
 	debian/copyright \
 	debian/rules \
-	debian/source/format
+	debian/source/format \
+	INSTALL \
+	README
 
 #### The rest of this file is just for the testsuite.  It is just
 #### boilerplate from the Autoconf manual describing how to use

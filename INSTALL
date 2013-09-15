@@ -1,0 +1,15 @@
+You may build directly from Git or use a distribution tarball.
+If you build from Git, make sure you have Autoconf and Automake
+installed, and run:
+
+	autoreconf -i
+
+Afterward, or if you are starting from a distribution tarball,
+run:
+
+	./configure
+	make
+
+To install the executables, run as superuser:
+
+	make install
