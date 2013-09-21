@@ -37,7 +37,7 @@ $(srcdir)/package.m4: $(top_srcdir)/configure.ac
 	  echo '  [@PACKAGE_URL@])'; \
 	} >'$(srcdir)/package.m4'
 
-EXTRA_DIST += testsuite.at $(srcdir)/package.m4 $(TESTSUITE) atlocal.in
+EXTRA_DIST += $(TESTSUITE_AT) $(srcdir)/package.m4 $(TESTSUITE) atlocal.in
 DISTCLEANFILES = atconfig
 TESTSUITE = $(srcdir)/testsuite
 TESTSUITE_AT = \
